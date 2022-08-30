@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Include\glad\glad.c" />
+    <ClCompile Include="Src\components\Camera.cpp" />
+    <ClCompile Include="Src\components\Lighting.cpp" />
+    <ClCompile Include="Src\components\Mesh.cpp" />
+    <ClCompile Include="Src\components\Model.cpp" />
+    <ClCompile Include="Src\components\Particle_System.cpp" />
+    <ClCompile Include="Src\components\Shader.cpp" />
+    <ClCompile Include="Src\main\App.cpp" />
+    <ClCompile Include="Src\main\Main.cpp" />
+    <ClCompile Include="Src\main\Scene.cpp" />
+    <ClCompile Include="Src\objects\Flipper.cpp" />
+    <ClCompile Include="Src\objects\Object.cpp" />
+    <ClCompile Include="Src\objects\Skybox.cpp" />
+    <ClCompile Include="Src\physics\Bounds.cpp" />
+    <ClCompile Include="Src\physics\Collider.cpp" />
+    <ClCompile Include="Src\physics\Octree.cpp" />
+    <ClCompile Include="Src\physics\Rigidbody.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\components\Camera.h" />
+    <ClInclude Include="Src\components\Lighting.h" />
+    <ClInclude Include="Src\components\Material.h" />
+    <ClInclude Include="Src\components\Mesh.h" />
+    <ClInclude Include="Src\components\Model.h" />
+    <ClInclude Include="Src\components\Model_Library.h" />
+    <ClInclude Include="Src\components\Particle_System.h" />
+    <ClInclude Include="Src\components\Shader.h" />
+    <ClInclude Include="Src\components\Shader_Library.h" />
+    <ClInclude Include="Src\main\App.h" />
+    <ClInclude Include="Src\main\Scene.h" />
+    <ClInclude Include="Src\objects\Flipper.h" />
+    <ClInclude Include="Src\objects\Object.h" />
+    <ClInclude Include="Src\objects\Skybox.h" />
+    <ClInclude Include="Src\physics\Bounds.h" />
+    <ClInclude Include="Src\physics\Collider.h" />
+    <ClInclude Include="Src\physics\Octree.h" />
+    <ClInclude Include="Src\physics\Rigidbody.h" />
+    <ClInclude Include="Src\utility\Constants.h" />
+    <ClInclude Include="Src\utility\Debug.h" />
+    <ClInclude Include="Src\utility\Debug_Quad.h" />
+    <ClInclude Include="Src\utility\Global.h" />
+    <ClInclude Include="Src\utility\Loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\shaders\bloom\Fragment.glsl" />
+    <None Include="Src\shaders\default\Fragment.glsl" />
+    <None Include="Src\shaders\default\Geometry.glsl" />
+    <None Include="Src\shaders\default\Vertex.glsl" />
+    <None Include="Src\shaders\depth-map-directional\Fragment.glsl" />
+    <None Include="Src\shaders\depth-map-directional\Vertex.glsl" />
+    <None Include="Src\shaders\depth-map-omnidirectional\Fragment.glsl" />
+    <None Include="Src\shaders\depth-map-omnidirectional\Geometry.glsl" />
+    <None Include="Src\shaders\depth-map-omnidirectional\Vertex.glsl" />
+    <None Include="Src\shaders\depth-visualiser\Fragment.glsl" />
+    <None Include="Src\shaders\depth-visualiser\Vertex.glsl" />
+    <None Include="Src\shaders\environment-mapped\Fragment.glsl" />
+    <None Include="Src\shaders\gaussian-blur\Fragment.glsl" />
+    <None Include="Src\shaders\gaussian-blur\Vertex.glsl" />
+    <None Include="Src\shaders\hdr\Fragment.glsl" />
+    <None Include="Src\shaders\light-visualiser\Fragment.glsl" />
+    <None Include="Src\shaders\light-visualiser\Vertex.glsl" />
+    <None Include="Src\shaders\particle\Fragment.glsl" />
+    <None Include="Src\shaders\particle\Geometry.glsl" />
+    <None Include="Src\shaders\particle\Vertex.glsl" />
+    <None Include="Src\shaders\skybox\Fragment.glsl" />
+    <None Include="Src\shaders\skybox\Vertex.glsl" />
+    <None Include="Src\shaders\sphere\Geometry.glsl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5a08fcf8-20af-4465-8f5c-eb8848ba4665}</ProjectGuid>
+    <RootNamespace>RTRApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Pinball</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</IntDir>
+    <IncludePath>$(SolutionDir)\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>A2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</IntDir>
+    <IncludePath>$(SolutionDir)\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>A2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</IntDir>
+    <IncludePath>$(SolutionDir)\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>A2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)\Build\$(Configuration) - $(PlatformTarget)\</IntDir>
+    <IncludePath>$(SolutionDir)\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>A2</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)dll\$(PlatformTarget)\SDL2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)dll\$(PlatformTarget)\SDL2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;assimp-vc142-mtd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)dll\$(PlatformTarget)\SDL2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)dll\$(PlatformTarget)\SDL2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

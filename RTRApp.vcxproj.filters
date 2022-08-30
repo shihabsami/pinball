@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{d801e43c-172f-4dc4-9a27-8bde6cfc364b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\components">
+      <UniqueIdentifier>{0562a9c9-179f-4bcb-a713-678772896535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{475f0aad-d2d2-437c-81bd-99bf0b00abaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\physics">
+      <UniqueIdentifier>{f3e41b7f-58b1-4773-b820-0b73657177a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{7bb92c41-ec8e-47a1-bc56-07317ac3e7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{c822f3cd-30b0-4817-8148-c49b83371967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\bloom">
+      <UniqueIdentifier>{8ce16b4d-f703-410d-a142-787656d360b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\default">
+      <UniqueIdentifier>{54253b2d-24df-4002-904c-841c06c20d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\depth-map-directional">
+      <UniqueIdentifier>{3613576e-354e-41e0-b84a-596cbdb19aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\depth-map-omnidirectional">
+      <UniqueIdentifier>{a54b0f7c-eb91-48e7-b99f-37f3e7f19def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\depth-visualiser">
+      <UniqueIdentifier>{7d15e808-38d0-4cee-942b-482e0248bdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\environment-mapped">
+      <UniqueIdentifier>{6e747ee3-603a-4815-a3ed-6e44e6524dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\gaussian-blur">
+      <UniqueIdentifier>{38dc30e3-89b4-4829-bafb-54eb2cd488ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\hdr">
+      <UniqueIdentifier>{731ba8f4-4c01-4ce0-812a-6584e4b82e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\light-visualiser">
+      <UniqueIdentifier>{2b4dbda7-1601-41b1-8628-c8a78509583b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\particle">
+      <UniqueIdentifier>{5de4306b-44e2-43c9-aec8-fa53b453fbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\skybox">
+      <UniqueIdentifier>{9a896403-f8d8-4b5a-a982-f4484a02a18e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders\sphere">
+      <UniqueIdentifier>{ce15cf18-2784-4abf-be98-4fb2f7389238}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main\App.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main\Main.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main\Scene.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\glad\glad.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Camera.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Lighting.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Mesh.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Model.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Particle_System.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\components\Shader.cpp">
+      <Filter>Source Files\components</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\objects\Flipper.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\objects\Object.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\objects\Skybox.cpp">
+      <Filter>Source Files\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\physics\Bounds.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\physics\Collider.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\physics\Octree.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\physics\Rigidbody.cpp">
+      <Filter>Source Files\physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\main\App.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\main\Scene.h">
+      <Filter>Source Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Camera.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Lighting.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Material.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Mesh.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Model.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Model_Library.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Particle_System.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Shader.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\components\Shader_Library.h">
+      <Filter>Source Files\components</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\objects\Flipper.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\objects\Object.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\objects\Skybox.h">
+      <Filter>Source Files\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\physics\Bounds.h">
+      <Filter>Source Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\physics\Collider.h">
+      <Filter>Source Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\physics\Octree.h">
+      <Filter>Source Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\physics\Rigidbody.h">
+      <Filter>Source Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\utility\Constants.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\utility\Debug.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\utility\Debug_Quad.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\utility\Global.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\utility\Loader.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\shaders\bloom\Fragment.glsl">
+      <Filter>Source Files\shaders\bloom</Filter>
+    </None>
+    <None Include="Src\shaders\default\Fragment.glsl">
+      <Filter>Source Files\shaders\default</Filter>
+    </None>
+    <None Include="Src\shaders\default\Geometry.glsl">
+      <Filter>Source Files\shaders\default</Filter>
+    </None>
+    <None Include="Src\shaders\default\Vertex.glsl">
+      <Filter>Source Files\shaders\default</Filter>
+    </None>
+    <None Include="Src\shaders\depth-map-directional\Fragment.glsl">
+      <Filter>Source Files\shaders\depth-map-directional</Filter>
+    </None>
+    <None Include="Src\shaders\depth-map-directional\Vertex.glsl">
+      <Filter>Source Files\shaders\depth-map-directional</Filter>
+    </None>
+    <None Include="Src\shaders\depth-map-omnidirectional\Fragment.glsl">
+      <Filter>Source Files\shaders\depth-map-omnidirectional</Filter>
+    </None>
+    <None Include="Src\shaders\depth-map-omnidirectional\Geometry.glsl">
+      <Filter>Source Files\shaders\depth-map-omnidirectional</Filter>
+    </None>
+    <None Include="Src\shaders\depth-map-omnidirectional\Vertex.glsl">
+      <Filter>Source Files\shaders\depth-map-omnidirectional</Filter>
+    </None>
+    <None Include="Src\shaders\depth-visualiser\Fragment.glsl">
+      <Filter>Source Files\shaders\depth-visualiser</Filter>
+    </None>
+    <None Include="Src\shaders\depth-visualiser\Vertex.glsl">
+      <Filter>Source Files\shaders\depth-visualiser</Filter>
+    </None>
+    <None Include="Src\shaders\environment-mapped\Fragment.glsl">
+      <Filter>Source Files\shaders\environment-mapped</Filter>
+    </None>
+    <None Include="Src\shaders\gaussian-blur\Fragment.glsl">
+      <Filter>Source Files\shaders\gaussian-blur</Filter>
+    </None>
+    <None Include="Src\shaders\gaussian-blur\Vertex.glsl">
+      <Filter>Source Files\shaders\gaussian-blur</Filter>
+    </None>
+    <None Include="Src\shaders\hdr\Fragment.glsl">
+      <Filter>Source Files\shaders\hdr</Filter>
+    </None>
+    <None Include="Src\shaders\light-visualiser\Fragment.glsl">
+      <Filter>Source Files\shaders\light-visualiser</Filter>
+    </None>
+    <None Include="Src\shaders\light-visualiser\Vertex.glsl">
+      <Filter>Source Files\shaders\light-visualiser</Filter>
+    </None>
+    <None Include="Src\shaders\sphere\Geometry.glsl">
+      <Filter>Source Files\shaders\sphere</Filter>
+    </None>
+    <None Include="Src\shaders\skybox\Fragment.glsl">
+      <Filter>Source Files\shaders\skybox</Filter>
+    </None>
+    <None Include="Src\shaders\skybox\Vertex.glsl">
+      <Filter>Source Files\shaders\skybox</Filter>
+    </None>
+    <None Include="Src\shaders\particle\Fragment.glsl">
+      <Filter>Source Files\shaders\particle</Filter>
+    </None>
+    <None Include="Src\shaders\particle\Geometry.glsl">
+      <Filter>Source Files\shaders\particle</Filter>
+    </None>
+    <None Include="Src\shaders\particle\Vertex.glsl">
+      <Filter>Source Files\shaders\particle</Filter>
+    </None>
+  </ItemGroup>
+</Project>
